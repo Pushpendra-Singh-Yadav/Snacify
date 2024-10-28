@@ -1,0 +1,437 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 80px;
+    filter: drop-shadow(0 0 10px orange);
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 5px orange;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 102, 0, 0.7);
+    color: #000;
+    border-color: orange;
+    box-shadow: 0 0 20px orange;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    background: linear-gradient(135deg, #FF6B6B, #FFD93D);
+    padding: 3rem 2rem;
+    animation: fadeIn 2s ease;
+    color: #fff;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: slideDown 1.5s ease-in-out;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    animation: fadeInText 2s ease-in;
+    color: #f3f3f3;
+}
+
+/* About Container */
+.about-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.about-mission, .about-values, .about-team {
+    margin: 2rem 0;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Mission Section */
+.about-mission h2, .about-values h2, .about-team h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #FF6B6B;
+}
+
+.about-mission p, .about-values p {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+.mission-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Core Values Section */
+.about-values {
+    background-color: #2B2B2B;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.value-item {
+    background: #393939;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: #FFD93D;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-align: center;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.value-item:hover {
+    transform: scale(1.05);
+}
+
+/* Main container styling */
+.about-team {
+    background-color: #121212;
+    color: #ff7f00;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Section heading */
+.about-team h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #ff7f00;
+    text-transform: uppercase;
+    position: relative;
+    animation: fadeInDown 1s ease forwards;
+}
+
+/* Team members container */
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual team member card */
+.team-member {
+    background-color: #333;
+    border-radius: 15px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Team member image styling */
+.team-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid #ff7f00;
+    transition: transform 0.4s ease;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.team-member:hover .team-image img {
+    transform: scale(1.1);
+}
+
+/* Team member details */
+.team-member h3 {
+    font-size: 1.6rem;
+    margin: 15px 0 5px;
+    color: #ff7f00;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #ff7f00;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255, 127, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon:hover {
+    background-color: #ff7f00;
+    color: #121212;
+}
+
+/* Keyframes for heading and team member fade-in animation */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in animation for each team member with a delay */
+.team-member {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.team-member:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.team-member:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); }
+    50% { box-shadow: 0 0 30px rgba(255, 255, 255, 0.7); }
+    100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+/* Footer Styling */
+.footer {
+    background: #1e1e1e;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 120px;
+    transition: transform 0.3s;
+}
+
+.footer-logo:hover img {
+    transform: scale(1.05);
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+.footer-navigation h3, .footer-contact h3, .footer-social h3 {
+    color: #ffa500;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-navigation ul li {
+    margin: 5px 0;
+}
+
+.footer-navigation ul li a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s;
+}
+
+.footer-navigation ul li a:hover {
+    color: #ffa500;
+}
+
+.footer-contact p {
+    font-size: 0.9em;
+    color: #dddddd;
+}
+
+.footer-contact p a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.social-icon.facebook {
+    background-image: url('https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png');
+}
+
+.social-icon.twitter {
+    background-image: url('https://img.icons8.com/ios-filled/50/ffffff/twitter.png');
+}
+
+.social-icon.instagram {
+    background-image: url('https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png');
+}
+
+.social-icon.linkedin {
+    background-image: url('https://img.icons8.com/ios-filled/50/ffffff/linkedin.png');
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #aaaaaa;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}

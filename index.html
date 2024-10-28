@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacify - Vending Machine solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Snacify Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="#our-machine" class="nav-btn">Services</a></li>
+                <li><a href="About-Us.html" class="nav-btn">About Us</a></li>
+                <li><a href="#partner-with-us" class="nav-btn">Contact</a></li>
+            </ul>
+        </nav>   
+        <div class="slideshow-container">
+            <div class="slideshow fade">
+                <img src="Slide-1.jpg" class="slide-image" alt="Slide 1">
+            </div>
+            <div class="slideshow fade">
+                <img src="Slide-2.jpg" class="slide-image" alt="Slide 2">
+            </div>
+            <div class="slideshow fade">
+                <img src="Slide-3.jpg" class="slide-image" alt="Slide 3">
+            </div>
+        </div>
+        <div class="welcome-text">
+            <h1>Welcome to <span class="company-name">Snacify</span></h1>
+            <p class="tagline">Smart vending solutions at your fingertips.</p>
+            <p class="animated-text">24 X 7 Available</p>
+        </div>
+    </header>
+</body>
+
+<section id="our-machine">
+    <div class="machine-container">
+        <h2 class="section-heading">Discover Our Advanced Vending Machine</h2>
+        <p class="section-subheading">Blending precision engineering and innovative technology to deliver an exceptional snacking experience.</p>
+        
+        <div class="machine-image">
+            <img src="machine.png" alt="Smart Vending Machine">
+        </div>
+        
+        <div class="machine-specs">
+            <div class="spec-item">
+                <h3>Dimensions</h3>
+                <p>1985mm X 1180mm X 890mm</p>
+            </div>
+            <div class="spec-item">
+                <h3>Tray Count</h3>
+                <p>6 High-Capacity Trays</p>
+            </div>
+            <div class="spec-item">
+                <h3>Temperature Range</h3>
+                <p>4°C to 25°C</p>
+            </div>
+            <div class="spec-item">
+                <h3>Weight</h3>
+                <p>350 Kgs</p>
+            </div>
+            <div class="spec-item">
+                <h3>Power</h3>
+                <p>110V - 120W</p>
+            </div>
+            <div class="spec-item">
+                <h3>Capacity</h3>
+                <p>510 Items (Chocolates, Drinks, Chips, Biscuits)</p>
+            </div>
+            <div class="spec-item">
+                <h3>Display Screen</h3>
+                <p>Interactive 15.6" Touchscreen</p>
+            </div>
+            <div class="spec-item">
+                <h3>Payment Options</h3>
+                <p>Contactless, Card, and Mobile Wallet</p>
+            </div>
+        </div>
+        
+        <div class="machine-features">
+            <h2 class="feature-heading">Highlighted Features</h2>
+            <p class="feature-description">Equipped with intelligent monitoring, real-time stock updates, and eco-friendly operations for seamless efficiency.</p>
+            <ul class="features-list">
+                <li class="feature-item">Automated Inventory Management</li>
+                <li class="feature-item">Temperature Control System</li>
+                <li class="feature-item">Cashless and Contactless Payment</li>
+                <li class="feature-item">Real-Time Stock Updates</li>
+                <li class="feature-item">Energy-Efficient LED Lighting</li>
+            </ul>
+        </div>
+
+        <div class="decorative-lights">
+            <span class="diya">🪔</span>
+            <span class="diya">🪔</span>
+        </div>
+    </div>
+</section>
+
+<section id="our-partners">
+    <div class="partners-container">
+        <h2>Our Valued Partners</h2>
+        <p class="partners-intro">We proudly collaborate with leading brands to bring you high-quality snacks and beverages through our vending machines.</p>
+
+        <div class="partners-grid">
+            <div class="partner-card">
+                <img src="partner 1.png" alt="Partner 1 Logo" class="partner-logo">
+                <h3>Brand A</h3>
+                <p class="partner-type">Category: Healthy Snacks</p>
+                <p class="partner-description">Brand A offers a selection of nutritious, tasty, and sustainably sourced snacks that satisfy a variety of dietary preferences.</p>
+                <button class="learn-more" onclick="openModal('modal1')">Learn More</button>
+            </div>
+
+            <div class="partner-card">
+                <img src="partner 2.png" alt="Partner 2 Logo" class="partner-logo">
+                <h3>Brand B</h3>
+                <p class="partner-type">Category: Beverages</p>
+                <p class="partner-description">Innovative drinks that emphasize flavor and health. Partner B’s beverages are a staple in our vending machines for refreshment on the go.</p>
+                <button class="learn-more" onclick="openModal('modal2')">Learn More</button>
+            </div>
+
+            <div class="partner-card">
+                <img src="partner 3.png" alt="Partner 3 Logo" class="partner-logo">
+                <h3>Brand C</h3>
+                <p class="partner-type">Category: Snacks & Treats</p>
+                <p class="partner-description">With a range of tasty treats and indulgent snacks, Brand C is well-loved for its unique flavors and quality ingredients.</p>
+                <button class="learn-more" onclick="openModal('modal3')">Learn More</button>
+            </div>
+            <!-- Additional partner cards can be added here -->
+        </div>
+    </div>
+</section>
+    <!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Brand A</h2>
+        <p>Details about Brand A...</p>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Brand B</h2>
+        <p>Details about Brand B...</p>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Brand C</h2>
+        <p>Details about Brand C...</p>
+    </div>
+</div>
+
+    <section class="locations-section">
+        <h2 class="section-title">Our Machine Locations</h2>
+        <p class="section-subtitle">Find our smart vending machines at prime locations, ready to serve you anytime.</p>
+        <div class="locations-container">
+            <div class="location">
+                <h3>Central Park Plaza</h3>
+                <p class="location-address">📍 Address: 123 Main St, City</p>
+                <p class="location-hours">⏰ Operating Hours: 6am - 11pm</p>
+                <a href="https://maps.google.com/?q=Central+Park+Plaza+123+Main+St+City" target="_blank" class="location-link">View on Map</a>
+            </div>
+            <div class="location">
+                <h3>Tech Valley Hub</h3>
+                <p class="location-address">📍 Address: 456 Innovation Rd, City</p>
+                <p class="location-hours">⏰ Operating Hours: 24/7</p>
+                <a href="https://maps.google.com/?q=Tech+Valley+Hub+456+Innovation+Rd+City" target="_blank" class="location-link">View on Map</a>
+            </div>
+            <div class="location">
+                <h3>City Center Mall</h3>
+                <p class="location-address">📍 Address: 789 Market Ave, City</p>
+                <p class="location-hours">⏰ Operating Hours: 9am - 9pm</p>
+                <a href="https://maps.google.com/?q=City+Center+Mall+789+Market+Ave+City" target="_blank" class="location-link">View on Map</a>
+            </div>
+            <!-- Additional locations can be added here with unique Google Maps links -->
+        </div>
+    </section>    
+           
+    <section id="testimonials">
+        <div class="testimonials-header">
+            <h2>What Our Customers Say</h2>
+            <p>Your satisfaction is our priority</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-box">
+                <div class="inner-box">
+                    <div class="front">
+                        <img src="pic 1.jpeg" alt="Customer Photo">
+                        <p class="customer-name">John Doe</p>
+                    </div>
+                    <div class="back">
+                        <p>"Snacify has transformed my office experience! Quick and efficient vending options that never fail."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="inner-box">
+                    <div class="front">
+                        <img src="pic 2.jpeg" alt="Customer Photo">
+                        <p class="customer-name">Jane Smith</p>
+                    </div>
+                    <div class="back">
+                        <p>"I can grab a snack any time, and the machine is always stocked with my favorites. Highly recommended!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="inner-box">
+                    <div class="front">
+                        <img src="pic 3.jpeg" alt="Customer Photo">
+                        <p class="customer-name">Alice Brown</p>
+                    </div>
+                    <div class="back">
+                        <p>"A reliable solution for quick and quality snacks. I love the range and availability!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="partner-with-us">
+        <div class="content-container">
+            <h2 class="section-title">Partner with Us</h2>
+            <p class="section-intro">Are you an eatery looking to expand your reach? Or a company seeking to provide premium snack options on your premises? Let's make it happen together!</p>
+            
+            <div class="partnership-options">
+                <div class="option eatery">
+                    <div class="option-content">
+                        <h3 class="option-title">Eateries & Snack Providers</h3>
+                        <p>Showcase your products in our vending machines and bring your delicious treats to a wider audience.</p>
+                        <a href="eatries-contact.html" class="btn contact-btn">Contact Us for Collaboration</a>
+                    </div>
+                </div>
+    
+                <div class="option install">
+                    <div class="option-content">
+                        <h3 class="option-title">Businesses, Schools & Public Spaces</h3>
+                        <p>Enhance your space by installing a smart vending machine. Delight your visitors with easy access to quality snacks.</p>
+                        <a href="partnership.html" class="btn contact-btn">
+                            <span class="btn-text">Request a Machine Installation</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <p class="cta-text">Join our journey to make snacking smarter and more accessible. Reach out to discuss how we can work together!</p>
+        </div>
+    </section>
+    
+        <button class="scroll-to-top" id="scrollToTopBtn">&#8679;</button>
+
+    <button class="scroll-to-top" id="scrollToTopBtn">&#8679; Top</button>
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Snacify Logo">
+                <p>Smart vending solutions at your fingertips.</p>
+            </div>
+        
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@snacify.com">info@snacify.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+    
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook"></a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon twitter"></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"></a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Snacify. All rights reserved.</p>
+        </div>
+    </footer>       
+    
+</body>
+</html>

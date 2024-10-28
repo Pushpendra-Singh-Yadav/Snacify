@@ -1,0 +1,252 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #f5f5f5;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+/* Contact Section Styling */
+.contact-us {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    color: #ffa726;
+    margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+    color: #ffcc80;
+    text-align: center;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+/* Container Styling */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-top: 2rem;
+    gap: 2rem;
+    animation: slideIn 1s ease;
+}
+
+.contact-form,
+.contact-info {
+    background: #212121;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.contact-form h2,
+.contact-info h2 {
+    color: #ffab40;
+}
+
+.intro-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffcc80;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+    color: #ffcc80;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #ffa726;
+}
+
+.contact-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #ffa726;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #ff9800;
+    transform: scale(1.05);
+}
+
+/* Contact Information */
+.benefits-list {
+    color: #ffcc80;
+    margin-top: 1rem;
+    list-style: disc;
+    padding-left: 1rem;
+}
+
+.contact-image {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Footer Styling */
+.footer {
+    background: #1e1e1e;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 120px;
+    transition: transform 0.3s;
+}
+
+.footer-logo:hover img {
+    transform: scale(1.05);
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+.footer-navigation h3, .footer-contact h3, .footer-social h3 {
+    color: #ffa500;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-navigation ul li {
+    margin: 5px 0;
+}
+
+.footer-navigation ul li a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s;
+}
+
+.footer-navigation ul li a:hover {
+    color: #ffa500;
+}
+
+.footer-contact p {
+    font-size: 0.9em;
+    color: #dddddd;
+}
+
+.footer-contact p a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.social-icon.facebook {
+    background-image: url('https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png');
+}
+
+.social-icon.twitter {
+    background-image: url('https://img.icons8.com/ios-filled/50/ffffff/twitter.png');
+}
+
+.social-icon.instagram {
+    background-image: url('https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png');
+}
+
+.social-icon.linkedin {
+    background-image: url('https://img.icons8.com/ios-filled/50/ffffff/linkedin.png');
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #aaaaaa;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
