@@ -129,43 +129,6 @@ body {
     25%, 75% { opacity: 1; }
 }
 
-/* Diwali Decorations */
-body::before {
-    content: '🪔 🪔 Happy Diwali! 🪔 🪔';
-    position: fixed;
-    top: 20px;
-    left: 25%;
-    transform: translateX(-50%);
-    font-size: 2em;
-    color: #ffa500;
-    text-shadow: 0 0 20px orange, 0 0 30px #ff4500, 0 0 40px #ff6347;
-    animation: glow 2s infinite alternate, float 4s ease-in-out infinite;
-    z-index: 9999;
-    white-space: nowrap;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-/* Glow Animation */
-@keyframes glow {
-    0%, 100% {
-        text-shadow: 0 0 10px orange, 0 0 20px #ff4500, 0 0 30px #ff6347;
-    }
-    50% {
-        text-shadow: 0 0 30px orange, 0 0 40px #ff4500, 0 0 50px #ff6347;
-    }
-}
-
-/* Float Animation */
-@keyframes float {
-    0%, 100% {
-        transform: translateX(-50%) translateY(0);
-    }
-    50% {
-        transform: translateX(-50%) translateY(-10px);
-    }
-}
-
 /* Overall Section Styling */
 #our-machine {
     padding: 100px 0;
@@ -292,20 +255,6 @@ body {
     transform: translateX(10px);
     background-color: #333;
     box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
-}
-
-/* Decorative Lights */
-.decorative-lights {
-    margin-top: 50px;
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-}
-
-.diya {
-    font-size: 2em;
-    color: #ffd700;
-    animation: flicker 1.8s infinite alternate;
 }
 
 /* Animations */
