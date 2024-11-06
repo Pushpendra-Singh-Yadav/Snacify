@@ -8,6 +8,23 @@ window.onscroll = function() {
     }
 };
 
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slideshow");
+const totalSlides = slides.length;
+
+function showSlides() {
+    slides.forEach((slide, index) => {
+        slide.classList.remove("active");
+    });
+    slides[currentSlide].classList.add("active");
+    currentSlide = (currentSlide + 1) % totalSlides;
+}
+
+// Initial display of the first slide
+showSlides();
+// Transition every 4 seconds
+setInterval(showSlides, 4000);
+
 // Text Animation for "24 X 7 Available"
 const animatedText = document.querySelector('.animated-text');
 const phrases = ["24 X 7 Available", "Instant Vending Solutions", "Serving You Anytime"];
