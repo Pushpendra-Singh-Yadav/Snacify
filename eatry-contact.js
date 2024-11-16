@@ -1,20 +1,41 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const formElements = document.querySelectorAll("input, textarea");
-    formElements.forEach((element, index) => {
-        element.style.opacity = 0;
-        setTimeout(() => {
-            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            element.style.opacity = 1;
-            element.style.transform = 'translateY(0)';
-        }, index * 100);
-    });
-    
-    const sendButton = document.querySelector(".contact-btn");
-    sendButton.addEventListener("mouseenter", () => {
-        sendButton.style.transition = 'transform 0.3s ease';
-        sendButton.style.transform = 'scale(1.1)';
-    });
-    sendButton.addEventListener("mouseleave", () => {
-        sendButton.style.transform = 'scale(1)';
+    // Select the form using its ID
+    const form = document.getElementById("contact-form");
+
+    // Add an event listener to handle form submission
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault(); // Prevents the default form submission (reloading the page)
+        
+        // Collect form data from each input field
+        const formData = {
+            "company-name": document.getElementById("company-name").value,
+            "contact-person": document.getElementById("contact-person").value,
+            "email": document.getElementById("email").value,
+            "phone": document.getElementById("phone").value,
+            "message": document.getElementById("message").value,
+        };
+
+        try {
+            // Send the form data to the Netlify function endpoint
+            const response = await fetch("/.netlify/functions/submit-contact", {
+                method: "POST", // Specify HTTP method as POST
+                headers: {
+                    "Content-Type": "application/json", // Specify content type as JSON
+                },
+                body: JSON.stringify(formData), // Convert formData object to JSON string
+            });
+
+            // Handle the response from the server
+            const result = await response.json();
+            if (response.ok) {
+                alert(result.message); // Show success message from the server
+                form.reset(); // Clear the form fields
+            } else {
+                alert("Error: " + result.message); // Show error message
+            }
+        } catch (error) {
+            alert("There was an error submitting the form. Please try again."); // Show error message
+            console.error("Submission error:", error);
+        }
     });
 });

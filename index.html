@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snacify - Vending Machine solution</title>
+    <title>Snacify - Vending Machine Solution</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body>   
+<body>
+    <!-- Hero Section -->
     <header class="hero">
         <nav class="navbar">
             <div class="logo">
@@ -18,7 +20,7 @@
                 <li><a href="About-Us.html" class="nav-btn">About Us</a></li>
                 <li><a href="#partner-with-us" class="nav-btn">Contact</a></li>
             </ul>
-        </nav>   
+        </nav>
         <div class="slideshow-container">
             <div class="slideshow fade">
                 <img src="Slide-1.jpg" class="slide-image" alt="Slide 1">
@@ -30,198 +32,301 @@
                 <img src="Slide-3.jpg" class="slide-image" alt="Slide 3">
             </div>
         </div>
-        
         <div class="welcome-text">
             <h1>Welcome to <span class="company-name">Snacify</span></h1>
             <p class="tagline">Smart vending solutions at your fingertips.</p>
             <p class="animated-text">24 X 7 Available</p>
         </div>
     </header>
-</body>
 
+<!-- Our Machine Section -->
 <section id="our-machine">
     <div class="machine-container">
-        <h2 class="section-heading">Discover Our Advanced Vending Machine</h2>
-        <p class="section-subheading">Blending precision engineering and innovative technology to deliver an exceptional snacking experience.</p>
-        
-        <div class="machine-image">
-            <img src="machine.png" alt="Smart Vending Machine">
+        <div class="machine-intro">
+            <h1>Discover Snacify</h1>
+            <p>Blending cutting-edge technology with sleek, sustainable design for a transformative vending experience.</p>
         </div>
-        
-        <div class="machine-specs">
-            <div class="spec-item">
-                <h3>Dimensions</h3>
-                <p>1985mm X 1180mm X 890mm</p>
+
+        <div class="machine-content">
+            <!-- Machine Image with Animated Glow Overlay -->
+            <div class="machine-image-wrapper">
+                <img src="machine.png" alt="Snacify Vending Machine" class="machine-image">
+                <div class="machine-overlay">
+                    <h2>Advanced Smart Vending</h2>
+                    <p>Integrates with real-time analytics, cloud updates, and intuitive user interfaces.</p>
+                </div>
+                <div class="image-glow"></div>
             </div>
-            <div class="spec-item">
-                <h3>Tray Count</h3>
-                <p>6 High-Capacity Trays</p>
+
+            <!-- Specifications and Features Section -->
+            <div class="machine-info">
+                <div class="specs-title">
+                    <h2>Machine Specifications</h2>
+                </div>
+                <div class="specs-grid">
+                    <div class="spec-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="spec-icon"><i class="fas fa-ruler-combined"></i></div>
+                        <div class="spec-info">
+                            <h3>Dimensions</h3>
+                            <p>1985mm x 1180mm x 890mm</p>
+                        </div>
+                    </div>
+                    <div class="spec-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="spec-icon"><i class="fas fa-desktop"></i></div>
+                        <div class="spec-info">
+                            <h3>Touchscreen</h3>
+                            <p>15.6" HD Interactive Display</p>
+                        </div>
+                    </div>
+                    <div class="spec-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="spec-icon"><i class="fas fa-box-open"></i></div>
+                        <div class="spec-info">
+                            <h3>Tray Capacity</h3>
+                            <p>6 Trays, Up to 60 SKUs</p>
+                        </div>
+                    </div>
+                    <div class="spec-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="spec-icon"><i class="fas fa-thermometer-half"></i></div>
+                        <div class="spec-info">
+                            <h3>Temperature Control</h3>
+                            <p>Maintains 4°C - 25°C</p>
+                        </div>
+                    </div>
+                    <div class="spec-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="spec-icon"><i class="fas fa-plug"></i></div>
+                        <div class="spec-info">
+                            <h3>Power Supply</h3>
+                            <p>110-240V, Low Energy Mode</p>
+                        </div>
+                    </div>
+                    <div class="spec-item" data-aos="fade-up" data-aos-delay="600">
+                        <div class="spec-icon"><i class="fas fa-database"></i></div>
+                        <div class="spec-info">
+                            <h3>Storage</h3>
+                            <p>Up to 510 Items</p>
+                        </div>
+                    </div>
+                    <div class="spec-item" data-aos="fade-up" data-aos-delay="700">
+                        <div class="spec-icon"><i class="fas fa-sync"></i></div>
+                        <div class="spec-info">
+                            <h3>System Updates</h3>
+                            <p>Cloud-Based, Automated</p>
+                        </div>
+                    </div>
+                    <div class="spec-item" data-aos="fade-up" data-aos-delay="800">
+                        <div class="spec-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="spec-info">
+                            <h3>Smart Sensors</h3>
+                            <p>Product Detection, Temperature</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features List -->
+                <div class="machine-features">
+                    <h2>Why Choose Snacify?</h2>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Real-Time Inventory Tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Enhanced Product Visibility</li>
+                        <li><i class="fas fa-check-circle"></i> Touch-Free Payments & Mobile Integration</li>
+                        <li><i class="fas fa-check-circle"></i> Environmentally-Friendly Design</li>
+                        <li><i class="fas fa-check-circle"></i> Remote Diagnostics & Maintenance</li>
+                    </ul>
+                </div>
             </div>
-            <div class="spec-item">
-                <h3>Temperature Range</h3>
-                <p>4°C to 25°C</p>
-            </div>
-            <div class="spec-item">
-                <h3>Weight</h3>
-                <p>350 Kgs</p>
-            </div>
-            <div class="spec-item">
-                <h3>Power</h3>
-                <p>110V - 120W</p>
-            </div>
-            <div class="spec-item">
-                <h3>Capacity</h3>
-                <p>510 Items (Chocolates, Drinks, Chips, Biscuits)</p>
-            </div>
-            <div class="spec-item">
-                <h3>Display Screen</h3>
-                <p>Interactive 15.6" Touchscreen</p>
-            </div>
-            <div class="spec-item">
-                <h3>Payment Options</h3>
-                <p>Contactless, Card, and Mobile Wallet</p>
-            </div>
-        </div>
-        
-        <div class="machine-features">
-            <h2 class="feature-heading">Highlighted Features</h2>
-            <p class="feature-description">Equipped with intelligent monitoring, real-time stock updates, and eco-friendly operations for seamless efficiency.</p>
-            <ul class="features-list">
-                <li class="feature-item">Automated Inventory Management</li>
-                <li class="feature-item">Temperature Control System</li>
-                <li class="feature-item">Cashless and Contactless Payment</li>
-                <li class="feature-item">Real-Time Stock Updates</li>
-                <li class="feature-item">Energy-Efficient LED Lighting</li>
-            </ul>
         </div>
     </div>
 </section>
-
-<section id="our-partners">
+      
+<section id="our-partners"> 
     <div class="partners-container">
         <h2>Our Valued Partners</h2>
-        <p class="partners-intro">We proudly collaborate with leading brands to bring you high-quality snacks and beverages through our vending machines.</p>
+        <p class="partners-intro">Collaborating with industry-leading brands to bring you premium snacks and beverages through our cutting-edge vending solutions.</p>
 
         <div class="partners-grid">
-            <div class="partner-card">
-                <img src="partner 1.png" alt="Partner 1 Logo" class="partner-logo">
+            <!-- Partner Card 1 -->
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="partner 1.png" alt="Brand A Logo" class="partner-logo">
                 <h3>Brand A</h3>
                 <p class="partner-type">Category: Healthy Snacks</p>
-                <p class="partner-description">Brand A offers a selection of nutritious, tasty, and sustainably sourced snacks that satisfy a variety of dietary preferences.</p>
+                <p class="partner-description">Premium snacks that cater to a variety of dietary preferences, sourced with sustainability in mind.</p>
                 <button class="learn-more" onclick="openModal('modal1')">Learn More</button>
             </div>
-
-            <div class="partner-card">
-                <img src="partner 2.png" alt="Partner 2 Logo" class="partner-logo">
+            <!-- Partner Card 2 -->
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="partner 2.png" alt="Brand B Logo" class="partner-logo">
                 <h3>Brand B</h3>
                 <p class="partner-type">Category: Beverages</p>
-                <p class="partner-description">Innovative drinks that emphasize flavor and health. Partner B’s beverages are a staple in our vending machines for refreshment on the go.</p>
+                <p class="partner-description">Innovative, natural beverages focused on health and flavor, perfect for on-the-go refreshment.</p>
                 <button class="learn-more" onclick="openModal('modal2')">Learn More</button>
             </div>
-
-            <div class="partner-card">
-                <img src="partner 3.png" alt="Partner 3 Logo" class="partner-logo">
+            <!-- Partner Card 3 -->
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="partner 3.png" alt="Brand C Logo" class="partner-logo">
                 <h3>Brand C</h3>
                 <p class="partner-type">Category: Snacks & Treats</p>
-                <p class="partner-description">With a range of tasty treats and indulgent snacks, Brand C is well-loved for its unique flavors and quality ingredients.</p>
+                <p class="partner-description">Uniquely flavored snacks crafted from high-quality ingredients for a delightful experience.</p>
                 <button class="learn-more" onclick="openModal('modal3')">Learn More</button>
             </div>
-            <!-- Additional partner cards can be added here -->
         </div>
     </div>
 </section>
-    <!-- Modal Structure -->
+
+<!-- Enhanced Modals for Partner Details -->
 <div id="modal1" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal('modal1')">&times;</span>
-        <h2>Brand A</h2>
-        <p>Details about Brand A...</p>
+        <h2>About Brand A</h2>
+        <p>Brand A is committed to offering health-conscious snacks made from natural ingredients. Their product line includes gluten-free, vegan, and low-calorie options, appealing to various dietary needs.</p>
+        <p><strong>Product Highlights:</strong></p>
+        <ul>
+            <li>100% organic ingredients</li>
+            <li>Eco-friendly packaging</li>
+            <li>Supports local communities through fair trade</li>
+        </ul>
     </div>
 </div>
 
 <div id="modal2" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal('modal2')">&times;</span>
-        <h2>Brand B</h2>
-        <p>Details about Brand B...</p>
+        <h2>About Brand B</h2>
+        <p>Brand B specializes in beverages that prioritize both quality and flavor. From classic sodas to organic juices, they emphasize natural ingredients.</p>
+        <p><strong>Product Highlights:</strong></p>
+        <ul>
+            <li>Non-GMO and organic options</li>
+            <li>Wide variety of flavors</li>
+            <li>Recyclable and eco-friendly packaging</li>
+        </ul>
     </div>
 </div>
 
 <div id="modal3" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal('modal3')">&times;</span>
-        <h2>Brand C</h2>
-        <p>Details about Brand C...</p>
+        <h2>About Brand C</h2>
+        <p>Brand C is known for its bold and innovative flavors, using high-quality ingredients to create unforgettable snacks loved by all.</p>
+        <p><strong>Product Highlights:</strong></p>
+        <ul>
+            <li>Unique flavors for adventurous taste buds</li>
+            <li>All-natural ingredients with no artificial additives</li>
+            <li>Commitment to sustainable practices</li>
+        </ul>
     </div>
 </div>
 
-    <section class="locations-section">
-        <h2 class="section-title">Our Machine Locations</h2>
-        <p class="section-subtitle">Find our smart vending machines at prime locations, ready to serve you anytime.</p>
-        <div class="locations-container">
-            <div class="location">
-                <h3>Central Park Plaza</h3>
-                <p class="location-address">📍 Address: 123 Main St, City</p>
-                <p class="location-hours">⏰ Operating Hours: 6am - 11pm</p>
-                <a href="https://maps.google.com/?q=Central+Park+Plaza+123+Main+St+City" target="_blank" class="location-link">View on Map</a>
-            </div>
-            <div class="location">
-                <h3>Tech Valley Hub</h3>
-                <p class="location-address">📍 Address: 456 Innovation Rd, City</p>
-                <p class="location-hours">⏰ Operating Hours: 24/7</p>
-                <a href="https://maps.google.com/?q=Tech+Valley+Hub+456+Innovation+Rd+City" target="_blank" class="location-link">View on Map</a>
-            </div>
-            <div class="location">
-                <h3>City Center Mall</h3>
-                <p class="location-address">📍 Address: 789 Market Ave, City</p>
-                <p class="location-hours">⏰ Operating Hours: 9am - 9pm</p>
-                <a href="https://maps.google.com/?q=City+Center+Mall+789+Market+Ave+City" target="_blank" class="location-link">View on Map</a>
-            </div>
-            <!-- Additional locations can be added here with unique Google Maps links -->
+
+<!-- Enhanced Modals for Partner Details -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>About Brand A</h2>
+        <p>Brand A is committed to offering health-conscious snacks made from natural ingredients. Their product line includes gluten-free, vegan, and low-calorie options, appealing to various dietary needs.</p>
+        <p><strong>Product Highlights:</strong></p>
+        <ul>
+            <li>100% organic ingredients</li>
+            <li>Eco-friendly packaging</li>
+            <li>Supports local communities through fair trade</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>About Brand B</h2>
+        <p>Brand B specializes in beverages that prioritize both quality and flavor. From classic sodas to organic juices, they emphasize natural ingredients.</p>
+        <p><strong>Product Highlights:</strong></p>
+        <ul>
+            <li>Non-GMO and organic options</li>
+            <li>Wide variety of flavors</li>
+            <li>Recyclable and eco-friendly packaging</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>About Brand C</h2>
+        <p>Brand C is known for its bold and innovative flavors, using high-quality ingredients to create unforgettable snacks loved by all.</p>
+        <p><strong>Product Highlights:</strong></p>
+        <ul>
+            <li>Unique flavors for adventurous taste buds</li>
+            <li>All-natural ingredients with no artificial additives</li>
+            <li>Commitment to sustainable practices</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Locations Section -->
+<section class="locations-section">
+    <h2 class="section-title">Our Machine Locations</h2>
+    <p class="section-subtitle">Locate our smart vending machines at the best spots in town, always ready for your needs.</p>
+    <div class="locations-container">
+        <div class="location">
+            <h3>Central Park Plaza</h3>
+            <p class="location-address">📍 Address: 123 Main St, City</p>
+            <p class="location-hours">⏰ Operating Hours: 6am - 11pm</p>
+            <a href="https://maps.google.com/?q=Central+Park+Plaza+123+Main+St+City" target="_blank" class="location-link">View on Map</a>
         </div>
-    </section>    
-           
-    <section id="testimonials">
-        <div class="testimonials-header">
-            <h2>What Our Customers Say</h2>
-            <p>Your satisfaction is our priority</p>
+        <div class="location">
+            <h3>Tech Valley Hub</h3>
+            <p class="location-address">📍 Address: 456 Innovation Rd, City</p>
+            <p class="location-hours">⏰ Operating Hours: 24/7</p>
+            <a href="https://maps.google.com/?q=Tech+Valley+Hub+456+Innovation+Rd+City" target="_blank" class="location-link">View on Map</a>
         </div>
-        <div class="testimonials-container">
-            <div class="testimonial-box">
-                <div class="inner-box">
-                    <div class="front">
-                        <img src="pic 1.jpeg" alt="Customer Photo">
-                        <p class="customer-name">John Doe</p>
-                    </div>
-                    <div class="back">
-                        <p>"Snacify has transformed my office experience! Quick and efficient vending options that never fail."</p>
-                    </div>
+        <div class="location">
+            <h3>City Center Mall</h3>
+            <p class="location-address">📍 Address: 789 Market Ave, City</p>
+            <p class="location-hours">⏰ Operating Hours: 9am - 9pm</p>
+            <a href="https://maps.google.com/?q=City+Center+Mall+789+Market+Ave+City" target="_blank" class="location-link">View on Map</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <div class="testimonials-header">
+        <h2>What Our Customers Say</h2>
+        <p>Your satisfaction drives us to deliver excellence.</p>
+    </div>
+    <div class="testimonials-container">
+        <div class="testimonial-box">
+            <div class="inner-box">
+                <div class="front">
+                    <img src="pic 1.jpeg" alt="Customer Photo">
+                    <p class="customer-name">John Doe</p>
+                </div>
+                <div class="back">
+                    <p>"Snacify has completely redefined convenience for me. Their machines are always stocked and reliable!"</p>
                 </div>
             </div>
-            <div class="testimonial-box">
-                <div class="inner-box">
-                    <div class="front">
-                        <img src="pic 2.jpeg" alt="Customer Photo">
-                        <p class="customer-name">Jane Smith</p>
-                    </div>
-                    <div class="back">
-                        <p>"I can grab a snack any time, and the machine is always stocked with my favorites. Highly recommended!"</p>
-                    </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="inner-box">
+                <div class="front">
+                    <img src="pic 2.jpeg" alt="Customer Photo">
+                    <p class="customer-name">Jane Smith</p>
                 </div>
-            </div>
-            <div class="testimonial-box">
-                <div class="inner-box">
-                    <div class="front">
-                        <img src="pic 3.jpeg" alt="Customer Photo">
-                        <p class="customer-name">Alice Brown</p>
-                    </div>
-                    <div class="back">
-                        <p>"A reliable solution for quick and quality snacks. I love the range and availability!"</p>
-                    </div>
+                <div class="back">
+                    <p>"The variety and quality are unmatched. I always find my favorite snacks, anytime, anywhere!"</p>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="testimonial-box">
+            <div class="inner-box">
+                <div class="front">
+                    <img src="pic 3.jpeg" alt="Customer Photo">
+                    <p class="customer-name">Alice Brown</p>
+                </div>
+                <div class="back">
+                    <p>"Great service and excellent vending machines! Highly recommended for busy professionals like me."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     
     <section id="partner-with-us">
         <div class="content-container">
