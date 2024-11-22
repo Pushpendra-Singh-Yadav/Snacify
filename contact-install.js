@@ -1,20 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const formElements = document.querySelectorAll("input, textarea");
-    formElements.forEach((element, index) => {
-        element.style.opacity = 0;
-        setTimeout(() => {
-            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            element.style.opacity = 1;
-            element.style.transform = 'translateY(0)';
-        }, index * 100);
-    });
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
     
-    const submitButton = document.querySelector(".contact-install-btn");
-    submitButton.addEventListener("mouseenter", () => {
-        submitButton.style.transition = 'transform 0.3s ease';
-        submitButton.style.transform = 'scale(1.1)';
-    });
-    submitButton.addEventListener("mouseleave", () => {
-        submitButton.style.transform = 'scale(1)';
-    });
+    // Display a loading spinner or message during submission
+    const submitButton = document.querySelector('.contact-install-btn');
+    submitButton.innerHTML = 'Submitting...';
+    submitButton.style.backgroundColor = '#ffc107';
+
+    // Simulate a delay to mimic an actual submission process
+    setTimeout(function() {
+        submitButton.innerHTML = 'Submitted';
+        submitButton.style.backgroundColor = '#4CAF50'; // Success color
+    }, 2000);
 });

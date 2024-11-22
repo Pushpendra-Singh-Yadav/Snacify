@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snacify - Vending Machine Solution</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Hero Section -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snacify</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        </head>
+        <body>
+           <!-- Hero Section -->
     <header class="hero">
         <nav class="navbar">
             <div class="logo">
@@ -39,253 +39,85 @@
         </div>
     </header>
 
-<!-- Our Machine Section -->
-<section id="our-machine">
-    <div class="machine-container">
-        <div class="machine-intro">
-            <h1>Discover Snacify</h1>
-            <p>Blending cutting-edge technology with sleek, sustainable design for a transformative vending experience.</p>
-        </div>
-
-        <div class="machine-content">
-            <!-- Machine Image with Animated Glow Overlay -->
-            <div class="machine-image-wrapper">
-                <img src="machine.png" alt="Snacify Vending Machine" class="machine-image">
-                <div class="machine-overlay">
-                    <h2>Advanced Smart Vending</h2>
-                    <p>Integrates with real-time analytics, cloud updates, and intuitive user interfaces.</p>
+            <section id="our-machine" class="our-machine-section">
+                <h2>Our Machine</h2>
+                <p>Discover the specifications and features of our advanced vending machine designed for efficiency and reliability.</p>
+            
+                <div class="machine-display">
+                    <img src="machine.png" alt="Vending Machine">
                 </div>
-                <div class="image-glow"></div>
-            </div>
-
-            <!-- Specifications and Features Section -->
-            <div class="machine-info">
-                <div class="specs-title">
-                    <h2>Machine Specifications</h2>
-                </div>
-                <div class="specs-grid">
-                    <div class="spec-item" data-aos="fade-up" data-aos-delay="100">
-                        <div class="spec-icon"><i class="fas fa-ruler-combined"></i></div>
-                        <div class="spec-info">
-                            <h3>Dimensions</h3>
-                            <p>1985mm x 1180mm x 890mm</p>
-                        </div>
-                    </div>
-                    <div class="spec-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="spec-icon"><i class="fas fa-desktop"></i></div>
-                        <div class="spec-info">
-                            <h3>Touchscreen</h3>
-                            <p>15.6" HD Interactive Display</p>
-                        </div>
-                    </div>
-                    <div class="spec-item" data-aos="fade-up" data-aos-delay="300">
-                        <div class="spec-icon"><i class="fas fa-box-open"></i></div>
-                        <div class="spec-info">
-                            <h3>Tray Capacity</h3>
-                            <p>6 Trays, Up to 60 SKUs</p>
-                        </div>
-                    </div>
-                    <div class="spec-item" data-aos="fade-up" data-aos-delay="400">
-                        <div class="spec-icon"><i class="fas fa-thermometer-half"></i></div>
-                        <div class="spec-info">
-                            <h3>Temperature Control</h3>
-                            <p>Maintains 4°C - 25°C</p>
-                        </div>
-                    </div>
-                    <div class="spec-item" data-aos="fade-up" data-aos-delay="500">
-                        <div class="spec-icon"><i class="fas fa-plug"></i></div>
-                        <div class="spec-info">
-                            <h3>Power Supply</h3>
-                            <p>110-240V, Low Energy Mode</p>
-                        </div>
-                    </div>
-                    <div class="spec-item" data-aos="fade-up" data-aos-delay="600">
-                        <div class="spec-icon"><i class="fas fa-database"></i></div>
-                        <div class="spec-info">
-                            <h3>Storage</h3>
-                            <p>Up to 510 Items</p>
-                        </div>
-                    </div>
-                    <div class="spec-item" data-aos="fade-up" data-aos-delay="700">
-                        <div class="spec-icon"><i class="fas fa-sync"></i></div>
-                        <div class="spec-info">
-                            <h3>System Updates</h3>
-                            <p>Cloud-Based, Automated</p>
-                        </div>
-                    </div>
-                    <div class="spec-item" data-aos="fade-up" data-aos-delay="800">
-                        <div class="spec-icon"><i class="fas fa-bolt"></i></div>
-                        <div class="spec-info">
-                            <h3>Smart Sensors</h3>
-                            <p>Product Detection, Temperature</p>
-                        </div>
+            
+                <button id="toggle-details" class="details-button">View Details</button>
+            
+                <div id="details-section" class="details">
+                    <div class="details-content">
+                        <h3>Specifications</h3>
+                        <ul>
+                            <li><strong>Dimensions:</strong> 1985mm x 1180mm x 890mm</li>
+                            <li><strong>Touchscreen:</strong> 15.6" HD Interactive Display</li>
+                            <li><strong>Tray Capacity:</strong> 6 Trays, Up to 60 SKUs</li>
+                            <li><strong>Temperature Control:</strong> Maintains 4°C - 25°C</li>
+                            <li><strong>Power Supply:</strong> 110-240V, Low Energy Mode</li>
+                            <li><strong>Storage:</strong> Up to 510 Items</li>
+                            <li><strong>System Updates:</strong> Cloud-Based, Automated</li>
+                            <li><strong>Smart Sensors:</strong> Product Detection, Temperature</li>
+                        </ul>
+            
+                        <h3>Why Choose Us?</h3>
+                        <ul>
+                            <li>Real-Time Inventory Tracking</li>
+                            <li>Enhanced Product Visibility</li>
+                            <li>Touch-Free Payments & Mobile Integration</li>
+                            <li>Environmentally-Friendly Design</li>
+                            <li>Remote Diagnostics & Maintenance</li>
+                        </ul>
                     </div>
                 </div>
-
-                <!-- Features List -->
-                <div class="machine-features">
-                    <h2>Why Choose Snacify?</h2>
-                    <ul class="features-list">
-                        <li><i class="fas fa-check-circle"></i> Real-Time Inventory Tracking</li>
-                        <li><i class="fas fa-check-circle"></i> Enhanced Product Visibility</li>
-                        <li><i class="fas fa-check-circle"></i> Touch-Free Payments & Mobile Integration</li>
-                        <li><i class="fas fa-check-circle"></i> Environmentally-Friendly Design</li>
-                        <li><i class="fas fa-check-circle"></i> Remote Diagnostics & Maintenance</li>
-                    </ul>
+            </section>
+            
+            <section id="partners" class="partners-section">
+                <h2>Our Trusted Partners</h2>
+                <p>We proudly collaborate with leading brands to provide top-quality products through our vending machines.</p>
+                <div class="partner-logos">
+                    <div class="logo-item">
+                        <img src="partner 1.png" alt="Partner 1">
+                    </div>
+                    <div class="logo-item">
+                        <img src="partner 2.png" alt="Partner 2">
+                    </div>
+                    <div class="logo-item">
+                        <img src="partner 3.png" alt="Partner 3">
+                    </div>
+                    <div class="logo-item">
+                        <img src="partner 4.png" alt="Partner 4">
+                    </div>
+                    <div class="logo-item">
+                        <img src="partner 5.png" alt="Partner 5">
+                    </div>
+                    <div class="logo-item">
+                        <img src="partner 6.png" alt="Partner 6">
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-      
-<section id="our-partners"> 
-    <div class="partners-container">
-        <h2>Our Valued Partners</h2>
-        <p class="partners-intro">Collaborating with industry-leading brands to bring you premium snacks and beverages through our cutting-edge vending solutions.</p>
-
-        <div class="partners-grid">
-            <!-- Partner Card 1 -->
-            <div class="partner-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="partner 1.png" alt="Brand A Logo" class="partner-logo">
-                <h3>Brand A</h3>
-                <p class="partner-type">Category: Healthy Snacks</p>
-                <p class="partner-description">Premium snacks that cater to a variety of dietary preferences, sourced with sustainability in mind.</p>
-                <button class="learn-more" onclick="openModal('modal1')">Learn More</button>
-            </div>
-            <!-- Partner Card 2 -->
-            <div class="partner-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="partner 2.png" alt="Brand B Logo" class="partner-logo">
-                <h3>Brand B</h3>
-                <p class="partner-type">Category: Beverages</p>
-                <p class="partner-description">Innovative, natural beverages focused on health and flavor, perfect for on-the-go refreshment.</p>
-                <button class="learn-more" onclick="openModal('modal2')">Learn More</button>
-            </div>
-            <!-- Partner Card 3 -->
-            <div class="partner-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="partner 3.png" alt="Brand C Logo" class="partner-logo">
-                <h3>Brand C</h3>
-                <p class="partner-type">Category: Snacks & Treats</p>
-                <p class="partner-description">Uniquely flavored snacks crafted from high-quality ingredients for a delightful experience.</p>
-                <button class="learn-more" onclick="openModal('modal3')">Learn More</button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Enhanced Modals for Partner Details -->
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal1')">&times;</span>
-        <h2>About Brand A</h2>
-        <p>Brand A is committed to offering health-conscious snacks made from natural ingredients. Their product line includes gluten-free, vegan, and low-calorie options, appealing to various dietary needs.</p>
-        <p><strong>Product Highlights:</strong></p>
-        <ul>
-            <li>100% organic ingredients</li>
-            <li>Eco-friendly packaging</li>
-            <li>Supports local communities through fair trade</li>
-        </ul>
-    </div>
-</div>
-
-<div id="modal2" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal2')">&times;</span>
-        <h2>About Brand B</h2>
-        <p>Brand B specializes in beverages that prioritize both quality and flavor. From classic sodas to organic juices, they emphasize natural ingredients.</p>
-        <p><strong>Product Highlights:</strong></p>
-        <ul>
-            <li>Non-GMO and organic options</li>
-            <li>Wide variety of flavors</li>
-            <li>Recyclable and eco-friendly packaging</li>
-        </ul>
-    </div>
-</div>
-
-<div id="modal3" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal3')">&times;</span>
-        <h2>About Brand C</h2>
-        <p>Brand C is known for its bold and innovative flavors, using high-quality ingredients to create unforgettable snacks loved by all.</p>
-        <p><strong>Product Highlights:</strong></p>
-        <ul>
-            <li>Unique flavors for adventurous taste buds</li>
-            <li>All-natural ingredients with no artificial additives</li>
-            <li>Commitment to sustainable practices</li>
-        </ul>
-    </div>
-</div>
-
-
-<!-- Enhanced Modals for Partner Details -->
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal1')">&times;</span>
-        <h2>About Brand A</h2>
-        <p>Brand A is committed to offering health-conscious snacks made from natural ingredients. Their product line includes gluten-free, vegan, and low-calorie options, appealing to various dietary needs.</p>
-        <p><strong>Product Highlights:</strong></p>
-        <ul>
-            <li>100% organic ingredients</li>
-            <li>Eco-friendly packaging</li>
-            <li>Supports local communities through fair trade</li>
-        </ul>
-    </div>
-</div>
-
-<div id="modal2" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal2')">&times;</span>
-        <h2>About Brand B</h2>
-        <p>Brand B specializes in beverages that prioritize both quality and flavor. From classic sodas to organic juices, they emphasize natural ingredients.</p>
-        <p><strong>Product Highlights:</strong></p>
-        <ul>
-            <li>Non-GMO and organic options</li>
-            <li>Wide variety of flavors</li>
-            <li>Recyclable and eco-friendly packaging</li>
-        </ul>
-    </div>
-</div>
-
-<div id="modal3" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal3')">&times;</span>
-        <h2>About Brand C</h2>
-        <p>Brand C is known for its bold and innovative flavors, using high-quality ingredients to create unforgettable snacks loved by all.</p>
-        <p><strong>Product Highlights:</strong></p>
-        <ul>
-            <li>Unique flavors for adventurous taste buds</li>
-            <li>All-natural ingredients with no artificial additives</li>
-            <li>Commitment to sustainable practices</li>
-        </ul>
-    </div>
-</div>
-
-<!-- Locations Section -->
-<section class="locations-section">
-    <h2 class="section-title">Our Machine Locations</h2>
-    <p class="section-subtitle">Locate our smart vending machines at the best spots in town, always ready for your needs.</p>
-    <div class="locations-container">
-        <div class="location">
-            <h3>Central Park Plaza</h3>
-            <p class="location-address">📍 Address: 123 Main St, City</p>
-            <p class="location-hours">⏰ Operating Hours: 6am - 11pm</p>
-            <a href="https://maps.google.com/?q=Central+Park+Plaza+123+Main+St+City" target="_blank" class="location-link">View on Map</a>
-        </div>
-        <div class="location">
-            <h3>Tech Valley Hub</h3>
-            <p class="location-address">📍 Address: 456 Innovation Rd, City</p>
-            <p class="location-hours">⏰ Operating Hours: 24/7</p>
-            <a href="https://maps.google.com/?q=Tech+Valley+Hub+456+Innovation+Rd+City" target="_blank" class="location-link">View on Map</a>
-        </div>
-        <div class="location">
-            <h3>City Center Mall</h3>
-            <p class="location-address">📍 Address: 789 Market Ave, City</p>
-            <p class="location-hours">⏰ Operating Hours: 9am - 9pm</p>
-            <a href="https://maps.google.com/?q=City+Center+Mall+789+Market+Ave+City" target="_blank" class="location-link">View on Map</a>
-        </div>
-    </div>
-</section>
-
-<!-- Testimonials Section -->
+            </section>
+          
+            <section class="our-vision">
+                <div class="vision-container">
+                    <div class="vision-content">
+                        <h2 class="vision-title">Our Vision</h2>
+                        <p class="vision-text">
+                            At Snacify, our vision is to revolutionize the way people access snacks and beverages by creating smart, 
+                            efficient, and eco-friendly vending solutions. We aim to seamlessly integrate technology into daily life, 
+                            offering convenience, quality, and innovation at every step. Our goal is to redefine the vending experience, 
+                            making it smarter, faster, and more customer-centric, while contributing to a sustainable future.
+                        </p>
+                    </div>
+                    <div class="vision-image">
+                        <img src="vision-illustration.png" alt="Our Vision Illustration" />
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Testimonials Section -->
 <section id="testimonials">
     <div class="testimonials-header">
         <h2>What Our Customers Say</h2>
@@ -327,40 +159,51 @@
         </div>
     </div>
 </section>
-    
-    <section id="partner-with-us">
-        <div class="content-container">
-            <h2 class="section-title">Partner with Us</h2>
-            <p class="section-intro">Are you an eatery looking to expand your reach? Or a company seeking to provide premium snack options on your premises? Let's make it happen together!</p>
-            
-            <div class="partnership-options">
-                <div class="option eatery">
-                    <div class="option-content">
-                        <h3 class="option-title">Eateries & Snack Providers</h3>
-                        <p>Showcase your products in our vending machines and bring your delicious treats to a wider audience.</p>
-                        <a href="eatries-contact.html" class="btn contact-btn">Contact Us for Collaboration</a>
-                    </div>
-                </div>
-    
-                <div class="option install">
-                    <div class="option-content">
-                        <h3 class="option-title">Businesses, Schools & Public Spaces</h3>
-                        <p>Enhance your space by installing a smart vending machine. Delight your visitors with easy access to quality snacks.</p>
-                        <a href="partnership.html" class="btn contact-btn">
-                            <span class="btn-text">Request a Machine Installation</span>
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
-    
-            <p class="cta-text">Join our journey to make snacking smarter and more accessible. Reach out to discuss how we can work together!</p>
-        </div>
-    </section>
-    
-        <button class="scroll-to-top" id="scrollToTopBtn">&#8679;</button>
 
-    <button class="scroll-to-top" id="scrollToTopBtn">&#8679; Top</button>
+            <section id="partner-with-us">
+                <div class="content-container">
+                    <h2 class="section-title">Partner with Us</h2>
+                    <p class="section-intro">
+                        Are you an eatery looking to expand your reach? Or a company seeking to provide premium snack options on your premises? Let's make it happen together!
+                    </p>
+            
+                    <div class="partnership-options">
+                        <!-- Option 1: Eateries -->
+                        <div class="option eatery">
+                            <div class="option-icon">
+                                <img src="https://img.icons8.com/color/96/restaurant.png" alt="Eateries Icon">
+                            </div>
+                            <div class="option-content">
+                                <h3 class="option-title">Eateries & Snack Providers</h3>
+                                <p>Showcase your products in our vending machines and bring your delicious treats to a wider audience.</p>
+                                <a href="eatries-contact.html" class="btn contact-btn">Collaborate with Us</a>
+                            </div>
+                        </div>
+            
+                        <!-- Option 2: Businesses -->
+                        <div class="option install">
+                            <div class="option-icon">
+                                <img src="https://img.icons8.com/color/96/office.png" alt="Business Icon">
+                            </div>
+                            <div class="option-content">
+                                <h3 class="option-title">Businesses, Schools & Public Spaces</h3>
+                                <p>Enhance your space by installing a smart vending machine. Delight your visitors with easy access to quality snacks.</p>
+                                <a href="partnership.html" class="btn contact-btn">Request Installation</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <p class="cta-text">
+                        Join our journey to make snacking smarter and more accessible. Reach out to discuss how we can work together!
+                    </p>
+                </div>
+            </section>
+            
+        
+
+
+            <button class="scroll-to-top" id="scrollToTopBtn">&#8679;</button>
+            <button class="scroll-to-top" id="scrollToTopBtn">&#8679; Top</button>
     <script src="script.js"></script>
 
     <footer class="footer">
@@ -379,16 +222,25 @@
     
             <div class="footer-social">
                 <h3>Follow Us</h3>
-                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook"></a>
-                <a href="https://www.twitter.com" target="_blank" class="social-icon twitter"></a>
-                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"></a>
-                <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin"></a>
-            </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/YOUR_USERNAME" target="_blank" class="social-icon facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com/YOUR_USERNAME" target="_blank" class="social-icon twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>           
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Snacify. All rights reserved.</p>
         </div>
-    </footer>       
-    
+    </footer>  
 </body>
 </html>

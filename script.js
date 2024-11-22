@@ -1,13 +1,3 @@
-// Sticky Navbar on Scroll
-window.onscroll = function() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-};
-
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slideshow");
 const totalSlides = slides.length;
@@ -48,46 +38,62 @@ function typeEffect() {
     
     setTimeout(typeEffect, deleting ? 100 : 200);
 }
-
 document.addEventListener('DOMContentLoaded', typeEffect);
 
-// Get the button
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleDetailsButton = document.getElementById("toggle-details");
+    const detailsSection = document.getElementById("details-section");
 
-// Show or hide the button based on scroll position
-window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollToTopBtn.style.display = "flex"; // Show the button
-    } else {
-        scrollToTopBtn.style.display = "none"; // Hide the button
+    toggleDetailsButton.addEventListener("click", () => {
+        const isOpen = detailsSection.classList.toggle("open");
+
+        // Change button text based on state
+        toggleDetailsButton.textContent = isOpen ? "Hide Details" : "View Details";
+
+        // Smooth scroll to the details when opened
+        if (isOpen) {
+            detailsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const logoContainer = document.querySelector(".partner-logos");
+    let scrollAmount = 0;
+
+    function autoScroll() {
+        scrollAmount += 1;
+        if (scrollAmount > logoContainer.scrollWidth) {
+            scrollAmount = 0;
+        }
+        logoContainer.scrollLeft = scrollAmount;
     }
-};
+
+    setInterval(autoScroll, 50);
+});
 
 // Scroll to the top when the button is clicked
-scrollToTopBtn.onclick = function() {
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+scrollToTopBtn.onclick = function () {
     window.scrollTo({
         top: 0,
         behavior: 'smooth' // Smooth scroll effect
     });
 };
+// Smooth fade-in on scroll for vision section
+document.addEventListener("DOMContentLoaded", () => {
+    const visionSection = document.querySelector(".our-vision");
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    visionSection.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.2 }
+    );
 
-function openModal(modalId) {
-    const modal = document.getElementById(modalId);
-    modal.style.display = "block";
-}
-
-function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    modal.style.display = "none";
-}
-
-// Close modal when clicking outside of the modal
-window.onclick = function(event) {
-    const modals = document.getElementsByClassName("modal");
-    for (let i = 0; i < modals.length; i++) {
-        if (event.target == modals[i]) {
-            modals[i].style.display = "none";
-        }
-    }
-};
-
+    observer.observe(visionSection);
+});
