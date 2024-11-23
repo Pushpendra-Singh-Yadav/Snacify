@@ -190,6 +190,75 @@ body {
     }
 }
 
+/* Scroll-to-Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ff7f00, #ffd700);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.scroll-to-top:hover {
+    background: linear-gradient(135deg, #ffd700, #ff7f00);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.scroll-to-top i {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover i {
+    transform: scale(1.1);
+}
+
+/* Show button when scrolling */
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Custom Scrollbar */
+body {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #ffd700 transparent; /* For Firefox */
+}
+
+/* Webkit Browsers */
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #ff7f00, #ffd700);
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #ffd700, #ff7f00);
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
 
 .footer {
     background-color: #222; /* Dark and authentic color */

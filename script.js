@@ -90,27 +90,20 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(autoScroll, 50);
 });
 
-// Scroll to the top when the button is clicked
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-scrollToTopBtn.onclick = function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Smooth scroll effect
-    });
-};
-// Smooth fade-in on scroll for vision section
-document.addEventListener("DOMContentLoaded", () => {
-    const visionSection = document.querySelector(".our-vision");
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    visionSection.classList.add("visible");
-                }
-            });
-        },
-        { threshold: 0.2 }
-    );
+    // Scroll-to-Top Button Logic
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-    observer.observe(visionSection);
-});
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
