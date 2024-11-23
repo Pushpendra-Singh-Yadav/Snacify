@@ -3,56 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Machine Installation Inquiry</title>
-    <link rel="stylesheet" href="contact-install.css">
+    <title>Contact Us | Smart Vending Installation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="contact-install.css">
 </head>
 <body>
-    <section class="contact-install">
-        <div class="install-header">
-            <h1>Smart Vending Machine Installation</h1>
-            <p>Partner with us to install our advanced vending solutions in your organization. Experience the future of on-demand snack and refreshment access.</p>
-        </div>
-
-        <div class="contact-install-container">
-            <div class="contact-install-form">
-                <h2>Installation Inquiry</h2>
-                <p class="intro-text">Interested in having a vending machine on your premises? Fill out the form below, and we’ll get back to you promptly.</p>
-
-                <form action="/submit-install-contact" method="POST">
-                    <label for="organization-name">Organization Name</label>
-                    <input type="text" id="organization-name" name="organization-name" placeholder="Your Organization Name" required>
-
-                    <label for="contact-person">Contact Person</label>
-                    <input type="text" id="contact-person" name="contact-person" placeholder="Your Name" required>
-
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tell us more about your installation requirements" required></textarea>
-
-                    <button type="submit" class="contact-install-btn">Submit Inquiry</button>
-                </form>
+    <!-- Contact Us Section -->
+    <section class="contact-install py-5">
+        <div class="container">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold">Smart Vending Machine Installation</h1>
+                <p class="lead">
+                    Partner with us to install our advanced vending solutions in your organization. Experience the future of on-demand snack and refreshment access.
+                </p>
             </div>
 
-            <div class="contact-info">
-                <h2>Why Choose Our Vending Solutions?</h2>
-                <ul class="benefits-list">
-                    <li>Customizable product selection based on your audience</li>
-                    <li>Real-time inventory tracking and smart restocking</li>
-                    <li>Eco-friendly machines with energy-saving features</li>
-                    <li>Multiple payment options for maximum convenience</li>
-                </ul>
-                <div class="contact-image">
-                    <img src="machine.png" alt="Vending Machine Installation">
+            <!-- Main Content -->
+            <div class="row g-4 align-items-start">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <div class="bg-light p-4 rounded shadow-sm">
+                        <h2 class="h5 fw-bold mb-4">Installation Inquiry</h2>
+                        <p>Interested in having a vending machine on your premises? Fill out the form below, and we’ll get back to you promptly.</p>
+                        <form action="/submit-install-contact" method="POST" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="organization-name" class="form-label">Organization Name</label>
+                                <input type="text" id="organization-name" name="organization-name" class="form-control" placeholder="Your Organization Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-person" class="form-label">Contact Person</label>
+                                <input type="text" id="contact-person" name="contact-person" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your Phone Number" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="4" class="form-control" placeholder="Tell us more about your installation requirements" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100 py-2">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="col-lg-6">
+                    <h2 class="h5 fw-bold mb-4 text-warning">Why Choose Our Vending Solutions?</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-warning me-3"></i>
+                            <span>Customizable product selection based on your audience</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-warning me-3"></i>
+                            <span>Real-time inventory tracking and smart restocking</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-warning me-3"></i>
+                            <span>Eco-friendly machines with energy-saving features</span>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="fas fa-check-circle text-warning me-3"></i>
+                            <span>Multiple payment options for maximum convenience</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <img src="machine.png" alt="Vending Machine" class="img-fluid rounded shadow-sm">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
 
 
