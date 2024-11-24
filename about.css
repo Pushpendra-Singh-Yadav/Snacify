@@ -1,169 +1,165 @@
-/* General Styles */
+/* General Body Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(180deg, #fafafa, #eeeeee);
-    color: #333;
-}
-
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Contact Section */
-.contact-install {
-    background: linear-gradient(to bottom, #ffed82, #ffc107);
-    color: #333;
-    padding: 3rem 0;
-}
-
-.contact-install h1 {
-    color: #333;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-}
-
-.contact-install p {
-    color: #555;
-}
-
-/* Form Styles */
-form .form-label {
-    font-weight: 600;
-}
-
-form .form-control {
-    border: 2px solid #ffd700;
-    border-radius: 10px;
-    padding: 0.7rem;
-    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-form .form-control:focus {
-    border-color: #ffa500;
-    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
-}
-
-form .btn {
-    font-weight: bold;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 8px;
-}
-
-form .btn:hover {
-    background-color: #ffc107;
-    box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.3);
-}
-
-/* Info Section */
-.contact-info h2 {
-    color: #ff7f00;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-}
-
-.contact-info ul {
-    padding-left: 0;
-}
-
-.contact-info ul li {
-    font-size: 1rem;
+    background-color: #fff8e1; /* Subtle yellow tone for warmth */
+    color: #121212; /* Deep black for contrast */
     line-height: 1.6;
-    color: #333;
 }
 
-.contact-info ul li i {
-    font-size: 1.3rem;
+/* Back to Home Button */
+.home-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    background: #ffa726; /* Bright orange */
+    color: #ffffff; /* White text for visibility */
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .contact-install {
-        padding: 2rem 1rem;
-    }
-    .contact-info img {
-        max-width: 100%;
-        margin-top: 2rem;
-    }
+.home-btn:hover {
+    background: #fb8c00; /* Slightly darker orange */
+    box-shadow: 0 10px 25px rgba(255, 152, 0, 0.7);
+    transform: scale(1.1);
 }
 
-/* Who We Are Section */
-.about-overview {
-    background: linear-gradient(135deg, #fff, #f4f4f4);
-    padding: 60px 20px;
+/* Hero Section */
+.hero-section {
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin: 40px 10px;
-    border-radius: 15px;
+    background: linear-gradient(135deg, #ff9800, #ffd54f);
+    padding: 100px 20px;
+    color: #ffffff; /* White text for bright contrast */
+    box-shadow: 0px 5px 20px rgba(255, 165, 0, 0.5);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-title .highlight {
+    color: #fff8e1; /* Soft yellow highlight */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.hero-subtitle .highlight {
+    color: #696b01; /* Bright yellow highlight */
+    font-weight: bold;
+}
+
+/* About Container */
+.about-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-overview {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .about-overview h2 {
     font-size: 2.5rem;
-    color: #ff7f00;
+    color: #ffa726;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 5px rgba(255, 127, 0, 0.5);
+    text-shadow: 0 0 5px rgba(255, 152, 0, 0.6);
 }
 
-.about-overview p {
+.overview-text {
     font-size: 1.2rem;
-    line-height: 1.8;
-    color: #555;
+    margin-bottom: 30px;
 }
 
+.overview-text .highlight {
+    color: #fb8c00;
+    font-weight: bold;
+}
+
+/* Overview Stats */
 .overview-stats {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
+    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
 }
 
 .stat-item {
-    background: linear-gradient(135deg, #ffd700, #ff7f00);
-    color: #fff;
+    background: #ffffff;
     padding: 20px;
     border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    max-width: 300px;
     text-align: center;
-    box-shadow: 0 8px 20px rgba(255, 127, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 250px;
-    position: relative;
-    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .stat-item:hover {
     transform: scale(1.1);
-    box-shadow: 0 12px 30px rgba(255, 127, 0, 0.4);
-    background: linear-gradient(135deg, #ff8c1a, #e6a200);
+    background: #fff3e0; /* Light orange for hover effect */
+    box-shadow: 0 10px 25px rgba(255, 152, 0, 0.5);
 }
 
 .stat-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    color: #ffa726;
+    margin-bottom: 15px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #121212;
     margin-bottom: 10px;
-    color: #fff;
-    animation: pulseIcon 2s infinite;
 }
 
-.stat-item h3 {
-    font-size: 2rem;
-    margin: 10px 0 5px;
-}
-
-.stat-item p {
-    font-size: 1.1rem;
-    margin-top: 10px;
-    color: #fff;
-}
-
-/* Animation for Icons */
-@keyframes pulseIcon {
-    0%, 100% {
-        transform: scale(1);
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
     }
-    50% {
-        transform: scale(1.2);
+
+    .overview-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-btn {
+        top: 10px;
+        right: 10px;
+        font-size: 0.9rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
     }
 }
 
