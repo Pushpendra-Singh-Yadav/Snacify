@@ -42,7 +42,7 @@ body {
 }
 
 /* Container Styling */
-.contact-install-container {
+.installation contact {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
